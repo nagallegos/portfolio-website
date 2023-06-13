@@ -1,6 +1,6 @@
 import { Grid, GridItem, Show } from "@chakra-ui/react";
-import NavBar from "./components/SideBar";
 import SideBar from "./components/SideBar";
+import Header from "./components/Header";
 
 function App() {
   return (
@@ -22,8 +22,8 @@ function App() {
         lg: "50px 100px 30px", // change the 100px later
       }}
     >
-      <GridItem area="header" bg="green">
-        Header
+      <GridItem area="header">
+        <Header />
       </GridItem>
       <Show above="lg">
         <GridItem area="nav">
