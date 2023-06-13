@@ -1,6 +1,8 @@
 import { Grid, GridItem, Show } from "@chakra-ui/react";
 import SideBar from "./components/SideBar";
 import Header from "./components/Header";
+import AboutSection from "./components/AboutSection";
+import AboutText from "./components/AboutText";
 
 function App() {
   return (
@@ -18,8 +20,8 @@ function App() {
         lg: "100px 1fr",
       }}
       templateRows={{
-        base: "50px 100px 30px", // change the 100px later
-        lg: "50px 100px 30px", // change the 100px later
+        base: "50px 1fr 1fr", // change the 100px later
+        lg: "50px 1fr 1fr", // change the 100px later
       }}
     >
       <GridItem area="header">
@@ -30,8 +32,10 @@ function App() {
           <SideBar />
         </GridItem>
       </Show>
-      <GridItem area="main" bg="blue">
-        Main
+      <GridItem area="main">
+        <AboutSection>
+          <AboutText />
+        </AboutSection>
       </GridItem>
       <GridItem area="footer" bg="yellow">
         Footer
