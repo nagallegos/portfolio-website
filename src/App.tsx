@@ -2,7 +2,7 @@ import { Grid, GridItem, Show } from "@chakra-ui/react";
 import SideBar from "./components/SideBar";
 import Header from "./components/Header";
 import AboutSection from "./components/AboutSection";
-import AboutText from "./components/AboutText";
+import ContactSection from "./components/ContactSection";
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
       }}
       templateColumns={{
         base: "1fr",
-        lg: "100px 1fr",
+        lg: "150px 1fr",
       }}
       templateRows={{
         base: "50px 1fr 1fr", // change the 100px later
@@ -33,12 +33,10 @@ function App() {
         </GridItem>
       </Show>
       <GridItem area="main">
-        <AboutSection>
-          <AboutText />
-        </AboutSection>
+        <AboutSection />
       </GridItem>
-      <GridItem area="footer" bg="yellow">
-        Footer
+      <GridItem area="footer">
+        <ContactSection />
       </GridItem>
     </Grid>
   );
