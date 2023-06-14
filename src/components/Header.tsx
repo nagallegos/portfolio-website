@@ -1,4 +1,4 @@
-import { Box, Center, Text } from "@chakra-ui/react";
+import { Box, Center, Image, Text } from "@chakra-ui/react";
 
 const Header = () => {
   return (
@@ -7,6 +7,15 @@ const Header = () => {
         <Text fontSize="4xl" fontFamily="mono">
           Nickolas Gallegos
         </Text>
+      </Center>
+      <Center>
+        <Image
+          marginTop={6}
+          boxSize="300px"
+          objectFit="contain"
+          src="./img/grad_photo.jpg"
+          alt="Nickolas Gallegos - Graduation Photo"
+        />
       </Center>
     </Box>
   );
