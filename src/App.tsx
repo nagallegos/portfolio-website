@@ -1,9 +1,10 @@
-import { Box, Flex, Grid, GridItem, Show, Spacer } from "@chakra-ui/react";
+import { Grid, GridItem, Show } from "@chakra-ui/react";
 import SideBar from "./components/SideBar";
 import Header from "./components/Header";
 import AboutSection from "./components/AboutSection";
 import ContactSection from "./components/ContactSection";
 import SkillsSection from "./components/SkillsSection";
+import Sticky from "react-stickynode";
 
 function App() {
   return (
@@ -35,7 +36,9 @@ function App() {
           borderRightWidth={1}
           borderColor="blue.200"
         >
-          <SideBar />
+          <Sticky>
+            <SideBar />
+          </Sticky>
         </GridItem>
       </Show>
       <GridItem
