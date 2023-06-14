@@ -8,11 +8,10 @@ const SideBar = () => {
       <SideBarItem>
         <Icon as={HamburgerIcon} fontSize={20} />
       </SideBarItem>
-      <SideBarItem>Item1</SideBarItem>
-      <SideBarItem>Item2</SideBarItem>
-      <SideBarItem>Item3</SideBarItem>
-      <SideBarItem>Item4</SideBarItem>
-      <SideBarItem>Item5</SideBarItem>
+      <SideBarItem compRef="/">Home</SideBarItem>
+      <SideBarItem compRef="#about-section">About</SideBarItem>
+      <SideBarItem compRef="#skills-section">Skills</SideBarItem>
+      <SideBarItem compRef="#contact-section">Contact</SideBarItem>
     </Box>
   );
 };

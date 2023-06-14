@@ -3,7 +3,7 @@ import SkillsContent from "./SkillsContent";
 
 const SkillsSection = () => {
   return (
-    <SectionContainer heading="Skills">
+    <SectionContainer id="skills-section" heading="Skills">
       <SkillsContent />
     </SectionContainer>
   );

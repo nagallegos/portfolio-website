@@ -3,7 +3,7 @@ import ContactInfo from "./ContactInfo";
 
 const ContactSection = () => {
   return (
-    <SectionContainer heading="Contact">
+    <SectionContainer id="contact-section" heading="Contact">
       <ContactInfo />
     </SectionContainer>
   );

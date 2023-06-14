@@ -3,7 +3,7 @@ import AboutText from "./AboutText";
 
 const AboutSection = () => {
   return (
-    <SectionContainer heading="About">
+    <SectionContainer id="about-section" heading="About">
       <AboutText />
     </SectionContainer>
   );
