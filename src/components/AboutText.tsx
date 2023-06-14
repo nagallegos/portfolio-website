@@ -3,7 +3,7 @@ import LoremIpsum from "react-lorem-ipsum";
 
 const AboutText = () => {
   return (
-    <Text fontFamily="body">
+    <Text>
       This is the about section where I will talk about myself...
       <LoremIpsum p={3} avgSentencesPerParagraph={3} />
     </Text>

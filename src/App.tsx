@@ -3,11 +3,11 @@ import SideBar from "./components/SideBar";
 import Header from "./components/Header";
 import AboutSection from "./components/AboutSection";
 import ContactSection from "./components/ContactSection";
+import SkillsSection from "./components/SkillsSection";
 
 function App() {
   return (
     <Grid
-      p={1}
       templateAreas={{
         base: `"header" 
                "main"
@@ -21,14 +21,11 @@ function App() {
         lg: "150px 1fr",
       }}
       templateRows={{
-        base: "auto 1fr 1fr", // change the 100px later
-        lg: "auto 1fr 1fr", // change the 100px later
+        base: "auto 1fr auto", // change the 100px later
+        lg: "auto 1fr auto", // change the 100px later
       }}
     >
-      <GridItem
-        area="header"
-        //bg={"green.500"}
-      >
+      <GridItem area="header" bg={"whiteAlpha.50"}>
         <Header />
       </GridItem>
       <Show above="lg">
@@ -46,11 +43,9 @@ function App() {
         //bg={"blue.500"}
       >
         <AboutSection />
+        <SkillsSection />
       </GridItem>
-      <GridItem
-        area="footer"
-        //bg={"purple.500"}
-      >
+      <GridItem area="footer" bg={"blackAlpha.400"}>
         <ContactSection />
       </GridItem>
     </Grid>
