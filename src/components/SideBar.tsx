@@ -1,9 +1,13 @@
 import { Box } from "@chakra-ui/react";
 import SideBarItem from "./SideBarItem";
+import { HamburgerIcon, Icon } from "@chakra-ui/icons";
 
 const SideBar = () => {
   return (
-    <Box p={2} borderRightWidth={2} marginBottom={2} borderColor="gray.500">
+    <Box p={2}>
+      <SideBarItem>
+        <Icon as={HamburgerIcon} fontSize={20} />
+      </SideBarItem>
       <SideBarItem>Item1</SideBarItem>
       <SideBarItem>Item2</SideBarItem>
       <SideBarItem>Item3</SideBarItem>
